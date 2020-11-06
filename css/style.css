@@ -22,6 +22,8 @@
   width: 100%;
   height: calc(100% / 3 - 3.3333px);
   border: 1px solid black;
+  background-position: center;
+  background-size: cover;
   /* margin-bottom: 5px; */
 }
 
@@ -29,8 +31,14 @@
   margin-bottom: 5px;
 }
 
-.li{
+.section-main:first-child{
   background-image: url("../img/bankok.jpg");
-  background-position: center;
-  background-size: cover;
+}
+
+.section-main:nth-child(2){
+  background-image: url("../img/londra.jpg");
+}
+
+.section-main:last-child{
+  background-image: url("../img/roma.jpg");
 }
