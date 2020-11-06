@@ -7,7 +7,6 @@
 #conteiner{
   width: 100vw;
   height: 100vh;
-  background-color: red;
 }
 
 #conteiner > main{
@@ -43,10 +42,29 @@
   background-image: url("../img/roma.jpg");
 }
 
-.section-main > h1{
+.trasparent{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.trasparent > h1{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+
+.section-main:hover .trasparent{
+  background-color: rgba(0,0,0,0);
+}
+
+.section-main:hover .trasparent h1{
+  display: none;
+}
+
+.section-main:hover{
+    box-shadow: 2px 4px #423189;
 }
