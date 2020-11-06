@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#conteiner{
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
+#conteiner > main{
+  margin: 0 auto;
+  width: 30vw;
+  height: 100vh;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#conteiner main .section-main{
+  width: 100%;
+  height: calc(100% / 3 - 3.3333px);
+  border: 1px solid black;
+  /* margin-bottom: 5px; */
+}
+
+.section-main:first-child, .section-main:nth-child(2){
+  margin-bottom: 5px;
+}
+
+.li{
+  background-image: url("../img/bankok.jpg");
+  background-position: center;
+  background-size: cover;
+}
