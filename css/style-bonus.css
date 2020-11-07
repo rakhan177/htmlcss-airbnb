@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-conteiner{
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+.conteiner .section-conteiner:first-child{
+  background-image: url(../img/bankok.jpg);
+}
+
+.conteiner .section-conteiner:nth-child(2){
+  background-image: url(../img/londra.jpg);
+}
+
+.conteiner .section-conteiner:last-child{
+  background-image: url(../img/roma.jpg);
+}
+
+.trasparenza{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.conteiner .section-conteiner .trasparenza h1{
+  color: #fff;
+  font-size: 20vh;
+  text-shadow: 2px 4px red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trasparenza span:first-of-type{
+  color: #fff;
+  font-size: 2vh;
+}
+
+.trasparenza span:nth-of-type(2){
+  color: #fff;
+  font-size: 1.5vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.trasparenza span:nth-of-type(3){
+  color: #fff;
+  font-size: 0.8vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.trasparenza > .scherzo{
+  width:2vw;
+  height: 3vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.trasparenza .warning{
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  left: 25vw;
+  bottom:23.5vh;
+  border: 50px dotted yellow;
+  background-color: #fff;
+  color: red;
+  display: none;
+}
+
+.warning .paura{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vh;
+}
+
+.scherzo:hover .warning{
+  display: block;
+}
